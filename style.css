@@ -58,6 +58,11 @@ html, body {
     cursor: url("assets/carKey.png"), auto;
 }
 
+body.dark-mode {
+  background: #140370;
+  background: linear-gradient(90deg, rgba(20, 3, 112, 1) 0%, rgba(69, 42, 156, 1) 51%, rgba(97, 54, 158, 1) 100%);
+}
+
 .screenParent {
     height: 100vh; /* 100% of viewport height */
     width: 100vw;  /* 100% of viewport width */
@@ -210,16 +215,6 @@ li {
   background-color: #005983;
   transform: scale(1.1);
 }
-
-/* --------------------------------------------------  Dark Mode --------------------------------------------------  */
-body.dark-mode {
-  overflow: visible;
-  background: #140370;
-  background: linear-gradient(90deg, rgba(20, 3, 112, 1) 0%, rgba(69, 42, 156, 1) 51%, rgba(97, 54, 158, 1) 100%);
-  background-attachment: fixed;
-  color: white;
-}
-
 
 /* --------------------------------------------------  BONEYARD --------------------------------------------------  */
 
