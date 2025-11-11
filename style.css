@@ -29,6 +29,8 @@
 }
 
 .darkModeBtn {
+  text-align: center;
+  padding: 14px 16px;
   float: right;
   margin-left: auto;
   display: inline-flex;
@@ -241,7 +243,7 @@ li {
 }
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
-/* .topnav.dark-mode {
+.topnav.dark-mode {
   overflow: hidden;
   background-color: #6E59C2;
   z-index: 10000;
@@ -250,7 +252,7 @@ li {
   width: 100%;
 }
 
-.topnav.dark-mode a {
+/* .topnav.dark-mode a {
   float: left;
   color: #ffffff;
   text-align: center;
