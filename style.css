@@ -59,7 +59,7 @@
   overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits
 } */
 
-html{
+html, body{
   scroll-behavior: smooth;
 }
 
