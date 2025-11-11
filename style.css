@@ -37,7 +37,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #6290D9; /* LinkedIn blue */
+  background-color: #E24EED; /* LinkedIn blue */
   color: white;
   font-size: 24px;
   text-decoration: none;
@@ -45,7 +45,7 @@
 }
 
 .darkModeBtn:hover {
-  background-color: #005983;
+  background-color: #A81377;
   transform: scale(1.1);
 }
 
@@ -241,7 +241,7 @@ li {
 }
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
-.topnav.dark-mode {
+/* .topnav.dark-mode {
   overflow: hidden;
   background-color: #E979F2;
   z-index: 10000;
@@ -267,7 +267,7 @@ li {
 .topnav.dark-mode a.active {
   background-color: #E24EED;
   color: white;
-}
+} */
 
 
 body.dark-mode {
