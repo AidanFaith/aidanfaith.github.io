@@ -33,17 +33,14 @@
 
 
 
-.homepage {
-  /*margin: 0;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
+/* .homepage {
   background-color: #EFADFF;
   background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
   color: white;
   font-family: Andale Mono;
   cursor: url("assets/carKey.png"), auto;
-  overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits */
-
-}
+  overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits
+} */
 
 
 html, body {
@@ -52,6 +49,13 @@ html, body {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
+    overflow: visible;
+    background-color: #EFADFF;
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: Andale Mono;
+    cursor: url("assets/carKey.png"), auto;
 }
 
 .screenParent {
@@ -90,7 +94,7 @@ h1 {
 /* --------------------------------------------------  About Me --------------------------------------------------  */
 
 
-.about-me{
+/* .about-me{
   overflow: visible;
   background-color: #EFADFF;
   background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
@@ -98,7 +102,7 @@ h1 {
   color: white;
   font-family: Andale Mono;
   cursor: url("assets/carKey.png"), auto;
-}
+} */
 
 .bubbleBox{
   /*text-align: center;*/
