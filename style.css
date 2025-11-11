@@ -2,7 +2,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #6E59C2;
+  background-color: #E979F2;
   z-index: 10000;
   position: fixed;
   top: 0px;
@@ -241,9 +241,9 @@ li {
 }
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
-/* .topnav.dark-mode {
+.topnav.dark-mode {
   overflow: hidden;
-  background-color: #E979F2;
+  background-color: #6E59C2;
   z-index: 10000;
   position: fixed;
   top: 0px;
@@ -267,7 +267,7 @@ li {
 .topnav.dark-mode a.active {
   background-color: #E24EED;
   color: white;
-} */
+}
 
 
 body.dark-mode {
