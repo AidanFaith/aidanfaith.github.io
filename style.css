@@ -86,67 +86,6 @@ h1 {
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  z-index: 2;
-  transform: translateY(65px);
-
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  /*transform: translateY(5px);*/
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(214,88,120,0.8);
-}
-
-/*.fade {*/
-/*  animation-name: fade;*/
-/*  animation-duration: 1.5s;*/
-/*}*/
-
-/*@keyframes fade {*/
-/*  from {opacity: .4}*/
-/*  to {opacity: 1}*/
-/*}*/
-
-  
-.radioImg{
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  padding: 5px;
-  }
-
 
 /* --------------------------------------------------  About Me --------------------------------------------------  */
 
@@ -159,7 +98,6 @@ h1 {
   color: white;
   font-family: Andale Mono;
   cursor: url("assets/carKey.png"), auto;
-
 }
 
 .bubbleBox{
@@ -269,10 +207,14 @@ li {
   transform: scale(1.1);
 }
 
-
-
-/* --------------------------------------------------  Gallery --------------------------------------------------  */
-
+/* --------------------------------------------------  Dark Mode --------------------------------------------------  */
+body.dark-mode {
+  overflow: visible;
+  background: #140370;
+  background: linear-gradient(90deg, rgba(20, 3, 112, 1) 0%, rgba(69, 42, 156, 1) 51%, rgba(97, 54, 158, 1) 100%);
+  background-attachment: fixed;
+  color: white;
+}
 
 
 /* --------------------------------------------------  BONEYARD --------------------------------------------------  */
@@ -298,37 +240,5 @@ li {
 /*  top: 0;*/
 /*}*/
 
-/* The dots/bullets/indicators */
-/*.dot {*/
-/*  cursor: pointer;*/
-/*  height: 15px;*/
-/*  width: 15px;*/
-/*  margin: 0 2px;*/
-/*  background-color: #bbb;*/
-/*  border-radius: 50%;*/
-/*  display: inline-block;*/
-/*  transition: background-color 0.6s ease;*/
-/*}*/
 
-/*.active, .dot:hover {*/
-/*  background-color: #717171;*/
-/*}*/
-
-/* Fading animation */
-
-
-/*.container {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-    /*border: 1px solid;*/
-/*    width: 50vw;*/
-/*    height: 50vw;*/
-/*    margin: 0 auto;*/
-/*}*/
-/*.container img*/
-/*{*/
-/*    max-width:100%;*/
-/*    max-height:100%;*/
-/*}*/
 
