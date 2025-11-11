@@ -1,5 +1,4 @@
-/* --------------------------------------------------  General and TopNav --------------------------------------------------  */
-
+/* -------------------------------------------------- TopNav & Dark Mode --------------------------------------------------  */
 
 .topnav {
   overflow: hidden;
@@ -35,8 +34,6 @@
 
 /* --------------------------------------------------  Home Page --------------------------------------------------  */
 
-
-
 /* .homepage {
   background-color: #EFADFF;
   background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
@@ -46,8 +43,7 @@
   overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits
 } */
 
-
-html, body {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -90,29 +86,7 @@ body.dark-mode {
     align-items: center; /* Example for arranging children */
 }
 
-
-h1 {
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  font-family: Helvetica, sans-serif;
-  font-size: 145px;
-  line-height: 0.65;
-  letter-spacing: -0.06em;
-  font-weight: 1100;
-  /*font-stretch: ultra-condensed;*/
-  top: 0;
-  transform: translateY(55px);
-  color: white;
-  
-  /*color: rgba(214,88,120,0.8);*/
-}
-
 * {box-sizing:border-box}
-
-
-/* --------------------------------------------------  About Me --------------------------------------------------  */
-
 
 /* .about-me{
   overflow: visible;
@@ -143,6 +117,13 @@ h1 {
   /*letter-spacing: -0.06em;*/
   /*font-weight: 1100;*/
 }
+  
+.gradPic{
+  border-radius: 20px;
+  float: right;
+  margin-left: 20px;
+  border: 1px solid #FBE8FD;
+}
 
 .myName{
   text-align: left;
@@ -152,14 +133,21 @@ h1 {
   letter-spacing: -0.06em;
   color: white;
 }
-  
-.gradPic{
-  border-radius: 20px;
-  float: right;
-  margin-left: 20px;
-  border: 1px solid #FBE8FD;
+
+h1 {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  font-family: Helvetica, sans-serif;
+  font-size: 145px;
+  line-height: 0.65;
+  letter-spacing: -0.06em;
+  font-weight: 1100;
+  top: 0;
+  transform: translateY(55px);
+  color: white;
 }
-  
+
 h2 {
   text-align: center;
   /*position: fixed;*/
