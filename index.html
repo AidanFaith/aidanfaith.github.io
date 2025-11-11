@@ -18,6 +18,7 @@
       <a href="#Experience_Sec">Experience</a>
       <a href="#Education_Sec">Education</a>
       <a href="#Projects_Sec">Projects</a>
+      <button id="theme-toggle">Toggle Dark Mode</button>
     </div>
     
     <div style="padding-left:16px">
@@ -198,6 +199,18 @@
     <br><br><br>
     
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+<!-- --------- JAVASCRIPT --------- -->
+
+    <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+    </script>
     
     <script>
     // Get the button
