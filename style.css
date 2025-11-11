@@ -241,7 +241,7 @@ li {
 }
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
-.topnav.darkmode {
+.topnav.dark-mode {
   overflow: hidden;
   background-color: #E979F2;
   z-index: 10000;
@@ -250,7 +250,7 @@ li {
   width: 100%;
 }
 
-.topnav.darkmode a {
+.topnav.dark-mode a {
   float: left;
   color: #ffffff;
   text-align: center;
@@ -259,12 +259,12 @@ li {
   font-size: 17px;
 }
 
-.topnav.darkmode a:hover {
+.topnav.dark-mode a:hover {
   background-color: #FCEEFF;
   color: #E24EED;
 }
 
-.topnav.darkmode a.active {
+.topnav.dark-mode a.active {
   background-color: #E24EED;
   color: white;
 }
