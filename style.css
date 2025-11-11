@@ -34,8 +34,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #E24EED; /* LinkedIn blue */
   color: white;
@@ -241,7 +241,7 @@ li {
 }
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
-.topnav.dark-mode {
+/* .topnav.dark-mode {
   overflow: hidden;
   background-color: #6E59C2;
   z-index: 10000;
@@ -267,7 +267,7 @@ li {
 .topnav.dark-mode a.active {
   background-color: #E24EED;
   color: white;
-}
+} */
 
 
 body.dark-mode {
