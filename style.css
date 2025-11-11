@@ -59,6 +59,10 @@
   overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits
 } */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
