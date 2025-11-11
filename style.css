@@ -59,7 +59,7 @@ html, body {
 }
 
 body.dark-mode {
-  background: #140370;
+  background-color: #140370;
   background: linear-gradient(rgba(20, 3, 112, 1) 0%, rgba(69, 42, 156, 1) 50%, rgba(97, 54, 158, 1) 100%);
 }
 
