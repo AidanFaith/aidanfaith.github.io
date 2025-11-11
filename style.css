@@ -59,8 +59,19 @@ html, body {
 }
 
 body.dark-mode {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: visible;
   background-color: #140370;
   background: linear-gradient(rgba(20, 3, 112, 1) 0%, rgba(69, 42, 156, 1) 50%, rgba(97, 54, 158, 1) 100%);
+  background-attachment: fixed;
+  color: white;
+  font-family: Andale Mono;
+  cursor: url("assets/carKey.png"), auto;
+
 }
 
 .screenParent {
