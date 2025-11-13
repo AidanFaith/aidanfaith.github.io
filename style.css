@@ -1,4 +1,51 @@
 /* -------------------------------------------------- TopNav --------------------------------------------------  */
+/* --- Top Bar --- */
+  .bar {
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  .bar-item {
+    padding: 14px 20px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .bar-item:hover {
+    background-color: #555;
+  }
+
+  .bar-item.active {
+    background-color: #04AA6D; /* Green highlight */
+  }
+
+  /* --- Tab Content Sections --- */
+  .tabcontent {
+    display: none;              /* Hidden by default */
+    padding: 20px;
+    border-top: none;
+    background-color: #f1f1f1;
+  }
+
+  .tabcontent.active {
+    display: block;             /* Show the active tab */
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 600px) {
+    .bar {
+      flex-direction: column;
+    }
+  }
+
+
+
+/* -------------------------------------------------- TopNav --------------------------------------------------  */
 
 .topnav {
   overflow: hidden;
