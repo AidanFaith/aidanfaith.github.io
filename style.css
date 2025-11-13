@@ -223,7 +223,9 @@ li {
   }
 
   .bar-item:hover {
-    background-color: #555;
+    background-color: white;
+    color: rgba(214, 88, 120);
+    
   }
 
   .bar-item.active {
