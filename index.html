@@ -53,7 +53,9 @@
     <section id = "Experience_Sec">
     <h3> Experience </h3>
     <div class = "bubbleBox">
-      <div class="w3-bar w3-black">
+
+      
+      <!-- <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button" onclick="openCity('GTA')">GTA</button>
         <button class="w3-bar-item w3-button" onclick="openCity('CareBoard')">Care Board Intern</button>
         <button class="w3-bar-item w3-button" onclick="openCity('engrCamp')">ENGR Camp GTA</button>
@@ -68,7 +70,7 @@
           <!--<ul class = "bubbleBoxBullets">-->
           <!--<li>Graduate Teaching Assistant for EECS210: Discrete Structures</li>-->
           <!--</ul>-->
-        </p>
+        <!-- </p>
       </div>
       
       <div id="CareBoard" class="w3-container city" style="display:none">
@@ -81,7 +83,7 @@
             <input type="submit" value="Go to The Care Board" />
           </form>
           <!--<br><br>-->
-        </p>
+        <!-- </p>
       </div>
       
       <div id="engrCamp" class="w3-container city" style="display:none">
@@ -97,7 +99,7 @@
         </a>
         
         </p>
-      </div>
+      </div> --> --> -->
     </div>
     </section>
 
@@ -201,7 +203,24 @@
 
 
 <!-- --------- JAVASCRIPT --------- -->
+    <script>
+    function openTab(tabName, event) {
+      // Hide all tab contents
+      document.querySelectorAll(".tabcontent").forEach(tab => tab.classList.remove("active"));
+      
+      // Remove "active" class from all buttons
+      document.querySelectorAll(".bar-item").forEach(btn => btn.classList.remove("active"));
+      
+      // Show the selected tab
+      document.getElementById(tabName).classList.add("active");
+      
+      // Highlight the clicked button
+      event.currentTarget.classList.add("active");
+    }
+    </script>
 
+
+    
     <script>
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
