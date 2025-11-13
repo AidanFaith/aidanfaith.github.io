@@ -295,7 +295,7 @@ li {
 .launchBtn {
     background-color: rgba(214, 88, 120);     /* white background */
     color: white;          /* pink text */
-    padding: 12px 24px;           /* Space inside button */
+    padding: 12px 12px;           /* Space inside button */
     border: none;                 /* Remove default border */
     border-radius: 6px;           /* Rounded corners */
     font-size: 16px;              /* Text size */
