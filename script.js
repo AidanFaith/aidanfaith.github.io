@@ -24,9 +24,8 @@ const body = document.body;
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 });
-</script>
-
-<script>
+  
+// --------- 
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
