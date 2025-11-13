@@ -33,7 +33,7 @@
   padding: 14px 16px;
   float: right;
   margin-left: auto;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
