@@ -253,6 +253,41 @@ li {
 
 /* -------------------------------------------------- END TABS --------------------------------------------------  */
 
+/* -------------------------------------------------- Care Board Button --------------------------------------------------  */
+.launchBtn {
+    background-color: rgba(214, 88, 120);     /* white background */
+    color: white;          /* pink text */
+    padding: 12px 24px;           /* Space inside button */
+    border: none;                 /* Remove default border */
+    border-radius: 6px;           /* Rounded corners */
+    font-size: 16px;              /* Text size */
+    font-family: Arial, sans-serif;
+    cursor: pointer;              /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+  }
+
+  .launchBtn:hover {
+    background-color: white;    /* Darker green on hover */
+    color: rgba(214, 88, 120); 
+    transform: translateY(-2px);  /* Subtle lift effect */
+  }
+
+  .launchBtn:active {
+    background-color: #CF4C6D;    /* Even darker pink when clicked */
+    transform: translateY(0);     /* Reset lift */
+  }
+
+  /* Optional: center the form on the page */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+/* -------------------------------------------------- END Care Board Button --------------------------------------------------  */
+
+
+
 #myBtn {
   display: none;
   position: fixed;
