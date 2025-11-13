@@ -206,8 +206,10 @@ li {
 /* --- Top Bar --- */
   .bar {
     display: flex;
-    background-color: #000;
+    background-color: rgba(214, 88, 120);
     overflow: hidden;
+    border-radius: 35px;
+
   }
 
   .bar-item {
@@ -225,7 +227,7 @@ li {
   }
 
   .bar-item.active {
-    background-color: #04AA6D; /* Green highlight */
+    background-color: none; /* test clear */
   }
 
   /* --- Tab Content Sections --- */
@@ -233,7 +235,7 @@ li {
     display: none;              /* Hidden by default */
     padding: 20px;
     border-top: none;
-    background-color: #f1f1f1;
+    background-color: none; /*test clear display hmm*/
   }
 
   .tabcontent.active {
