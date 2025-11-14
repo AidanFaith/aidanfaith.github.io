@@ -1,4 +1,4 @@
-// --------- 
+// --------- DARK MODE
 function openTab(tabName, event) {
   // Hide all tab contents
   document.querySelectorAll(".tabcontent").forEach(tab => tab.classList.remove("active"));
@@ -13,7 +13,7 @@ function openTab(tabName, event) {
   event.currentTarget.classList.add("active");
 }
 
-// --------- 
+// --------- DARK MODE
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
