@@ -1,16 +1,25 @@
 /* -------------------------------------------------- TopNav --------------------------------------------------  */
 
 .topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
   background-color: #E979F2;
   z-index: 10000;
   position: fixed;
   top: 0px;
+  /* height: 60px; */
   width: 100%;
+  /* padding: 0 16px; */
+}
+
+.navLeft {
+  display: flex;
+  height: 100%;
 }
 
 .topnav a {
-  float: left;
   color: #ffffff;
   text-align: center;
   padding: 14px 16px;
@@ -30,20 +39,20 @@
 
 .darkModeBtn {
   text-align: center;
+  margin-top: 1px;
+  margin-right: 8px;
   padding: 14px 16px;
-  float: right;
-  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #E24EED; /* LinkedIn blue */
+  background-color: #E24EED;
   color: white;
   font-size: 24px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
+  /* text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s; */
 }
 
 .darkModeBtn:hover {
@@ -51,34 +60,27 @@
   transform: scale(1.1);
 }
 
-/* --------------------------------------------------  Home Page --------------------------------------------------  */
+/* -------------------------------------------------- END TopNav --------------------------------------------------  */
 
-/* .homepage {
-  background-color: #EFADFF;
-  background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
-  color: white;
-  font-family: Andale Mono;
-  cursor: url("assets/carKey.png"), auto;
-  overflow: hidden; /* Optional: Prevents scrollbars if content perfectly fits
-} */
 
+/* -------------------------------------------------- General --------------------------------------------------  */
 html, body{
   scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    scroll-behavior: smooth;
-    overflow: visible;
-    background-color: #EFADFF;
-    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
-    background-attachment: fixed;
-    color: white;
-    font-family: Andale Mono;
-    cursor: url("assets/carKey.png"), auto;
+  margin: 0;
+  /* padding: 0; */
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: visible;
+  background-color: #EFADFF;
+  background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
+  background-attachment: fixed;
+  color: white;
+  font-family: Andale Mono;
+  cursor: url("assets/carKey.png"), auto;
 }
 
 body.dark-mode {
@@ -110,16 +112,6 @@ body.dark-mode {
 }
 
 * {box-sizing:border-box}
-
-/* .about-me{
-  overflow: visible;
-  background-color: #EFADFF;
-  background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(239, 173, 255, 1) 50%, rgba(214, 88, 120, 1) 100%);
-  background-attachment: fixed;
-  color: white;
-  font-family: Andale Mono;
-  cursor: url("assets/carKey.png"), auto;
-} */
 
 .bubbleBox{
   /*text-align: center;*/
@@ -202,9 +194,10 @@ h3{
 li {
   margin-left: 1em; /* Indents the list item text */
 }
+/* --------------------------------------------------  END General --------------------------------------------------  */
+
 
 /* -------------------------------------------------- Document Hovering --------------------------------------------------  */
-/* ===== SHARED HOVER EFFECT ===== */
 .hover-effect {
   position: relative;
   display: inline-block;
@@ -238,16 +231,13 @@ li {
   transform: scale(1.02); /* slight zoom */
 }
 
-/* ===== CONTAINER SPECIFIC STYLING ===== */
 
-/* PDF slides */
 .pdf-container {
   width: 35%;
   height: auto;
   aspect-ratio: 16 / 9; /* typical slide aspect ratio */
 }
 
-/* Research papers */
 .research-container {
   width: 35%;
   height: auto;
@@ -257,9 +247,8 @@ li {
   margin: 25px;
   border: 1px solid #FBE8FD;
 }
-
-
 /* -------------------------------------------------- END Document Hovering --------------------------------------------------  */
+
 
 /* -------------------------------------------------- TABS --------------------------------------------------  */
 /* --- Top Bar --- */
@@ -312,31 +301,31 @@ li {
 
 /* -------------------------------------------------- END TABS --------------------------------------------------  */
 
+
 /* -------------------------------------------------- Care Board Button --------------------------------------------------  */
 .launchBtn {
-    background-color: rgba(214, 88, 120);     /* white background */
-    color: white;          /* pink text */
+    background-color: rgba(214, 88, 120);
+    color: white;
     padding: 12px 12px;           /* Space inside button */
-    border: none;                 /* Remove default border */
-    border-radius: 6px;           /* Rounded corners */
-    font-size: 16px;              /* Text size */
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
     font-family: Arial, sans-serif;
-    cursor: pointer;              /* Pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
   }
 
   .launchBtn:hover {
-    background-color: white;    /* Darker green on hover */
+    background-color: white;
     color: rgba(214, 88, 120); 
-    transform: translateY(-2px);  /* Subtle lift effect */
+    transform: translateY(-2px);
   }
 
-  .launchBtn:active {
-    background-color: #CF4C6D;    /* Even darker pink when clicked */
-    transform: translateY(0);     /* Reset lift */
+  .launchBtn:active { /* effects when clicked */
+    background-color: #CF4C6D;
+    transform: translateY(0);
   }
 
-  /* Optional: center the form on the page */
   form {
     display: flex;
     justify-content: center;
@@ -346,6 +335,7 @@ li {
 /* -------------------------------------------------- END Care Board Button --------------------------------------------------  */
 
 
+/* -------------------------------------------------- LinkedIn Button --------------------------------------------------  */
 
 #myBtn {
   display: none;
@@ -386,6 +376,8 @@ li {
   background-color: #005983;
   transform: scale(1.1);
 }
+/* -------------------------------------------------- END LinkedIn Button --------------------------------------------------  */
+
 
 /* -------------------------------------------------- Dark Mode --------------------------------------------------  */
 .topnav.dark-mode {
@@ -432,6 +424,7 @@ body.dark-mode {
   font-family: Andale Mono;
   cursor: url("assets/carKey.png"), auto;
 }
+/* -------------------------------------------------- END Dark Mode --------------------------------------------------  */
 
 
 /* --------------------------------------------------  BONEYARD --------------------------------------------------  */

@@ -1,5 +1,3 @@
-// --------- JAVASCRIPT ---------
-
 // --------- 
 function openTab(tabName, event) {
   // Hide all tab contents
@@ -15,8 +13,6 @@ function openTab(tabName, event) {
   event.currentTarget.classList.add("active");
 }
 
-
-    
 // --------- 
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
