@@ -164,6 +164,11 @@ body {
   width:35%;
 }
 
+body.dark-mode .gradPic {
+  content: url("pics/teachingPic.JPG");
+  border-color: #5849b8; /* optional: darker border for dark mode */
+}
+
 .myName{
   text-align: left;
   font-family: Helvetica, sans-serif;

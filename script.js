@@ -1,4 +1,4 @@
-// --------- DARK MODE
+// --------- NAV BAR (?)
 function openTab(tabName, event) {
   // Hide all tab contents
   document.querySelectorAll(".tabcontent").forEach(tab => tab.classList.remove("active"));
@@ -17,12 +17,24 @@ function openTab(tabName, event) {
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
+// Load saved preference on refresh
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+}
+
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
+
+  // Save new preference
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
 });
+
   
-// --------- 
-// Get the button
+// --------- SCROLL TOP
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
