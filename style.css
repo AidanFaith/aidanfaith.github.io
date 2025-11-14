@@ -100,15 +100,15 @@ body.dark-mode {
 }
 
 .screenParent {
-    height: 100vh; /* 100% of viewport height */
-    width: 100vw;  /* 100% of viewport width */
+    height: 100vh;
+    width: 100vw;
     /* Or, if body is set to 100% height/width: */
     /* height: 100%; */
     /* width: 100%; */
-    display: flex; /* Example for arranging children */
-    flex-direction: column; /* Example for arranging children */
-    justify-content: center; /* Example for arranging children */
-    align-items: center; /* Example for arranging children */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 * {box-sizing:border-box}
@@ -201,47 +201,49 @@ li {
 .hover-effect {
   position: relative;
   display: inline-block;
-  overflow: hidden;         /* prevents zoom/overlay from spilling */
+  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .hover-effect img {
   width: 100%;
-  height: 100%;             /* ensures image fills container */
+  height: 100%;
   display: block;
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
 
-/* Overlay effect */
 .hover-effect::after {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0); /* invisible by default */
+  background: rgba(0, 0, 0, 0);
   transition: background 0.3s ease;
 }
 
 .hover-effect:hover::after {
-  background: rgba(0, 0, 0, 0.4); /* dark overlay on hover */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hover-effect:hover img {
-  transform: scale(1.02); /* slight zoom */
+  transform: scale(1.02);
 }
 
+.hover-effect::after {
+  pointer-events: none;
+}
 
 .pdf-container {
   width: 35%;
   height: auto;
-  aspect-ratio: 16 / 9; /* typical slide aspect ratio */
+  aspect-ratio: 16 / 9;
 }
 
 .research-container {
   width: 35%;
   height: auto;
-  aspect-ratio: 2 / 3; /* portrait paper aspect ratio */
+  aspect-ratio: 2 / 3;
   border-radius: 5px;
   float: right;
   margin: 25px;
@@ -251,7 +253,6 @@ li {
 
 
 /* -------------------------------------------------- TABS --------------------------------------------------  */
-/* --- Top Bar --- */
   .bar {
     display: flex;
     background-color: rgba(214, 88, 120);
@@ -280,19 +281,17 @@ li {
     background-color: none; /* test clear */
   }
 
-  /* --- Tab Content Sections --- */
   .tabcontent {
-    display: none;              /* Hidden by default */
+    display: none;
     padding: 20px;
     border-top: none;
     background-color: none; /*test clear display hmm*/
   }
 
   .tabcontent.active {
-    display: block;             /* Show the active tab */
+    display: block;
   }
 
-  /* --- Responsive --- */
   @media (max-width: 600px) {
     .bar {
       flex-direction: column;
@@ -306,7 +305,7 @@ li {
 .launchBtn {
     background-color: rgba(214, 88, 120);
     color: white;
-    padding: 12px 12px;           /* Space inside button */
+    padding: 12px 12px;
     border: none;
     border-radius: 15px;
     font-size: 16px;
@@ -323,7 +322,7 @@ li {
     transform: translateY(-2px);
   }
 
-  .launchBtn:active { /* effects when clicked */
+  .launchBtn:active {
     background-color: #CF4C6D;
     transform: translateY(0);
   }
